@@ -1,0 +1,324 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px
+}
+.header{
+    background-color: hsl(193, 100%, 96%);
+    padding: 30px 70px;
+    background-image: url("./Images/bg-hero-desktop.svg");
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.navbar .logo img{
+    height: 20px;
+}
+.navbar .header-btn button{
+    padding: 10px 30px;
+    border: none;
+    border-radius: 16px;
+    background-color: white;
+    font-style: bold;
+    font-weight: 600;
+    box-shadow: -1px 1px 5px 1px rgb(0, 0, 0, 0.35);
+}
+.navbar .header-btn button:hover{
+    color: rgb(0, 0, 0, 0.5);
+}
+.header-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.header-div .header-des{
+    padding: 80px 0;
+    width: 40%;
+}
+.header-div .header-des h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.header-div .header-des p{
+    margin-bottom: 30px;
+}
+.header-div button{
+    padding: 15px 60px;
+    border-radius: 22px;
+    border: none;
+    background-color: hsl(322, 100%, 66%);
+    color: white;
+    cursor: pointer;
+}
+.header-div button:hover{
+    background-color: hsl(322, 100%, 86%);
+}
+.header-div .header-img{
+    width: 60%;
+    background-image: url("./Images/illustration-mockups.svg");
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: 5%;
+}
+.main-body{
+    display: flex;
+    flex-direction: column;
+    margin: 60px 50px;
+}
+.body-des{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-shadow: -1px 1px 5px 1px rgb(0, 0, 0, 0.35);
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 40px 40px 40px 70px;
+    width: 100%;
+}
+.body-des .des-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+}
+.body-des .des-text h2{
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 20px;
+}
+.body-des .des-img{
+    width: 40%;
+}
+.body-des .des-img img{
+    height: 100%;
+    width: 100%;
+}
+.body-des div:nth-child(2){
+    margin-left: 200px;
+}
+footer {
+  position: relative;
+  background: hsl(216, 53%, 9%);
+  margin-top: 20%;
+  padding: 15% 5% 5% 5%;
+}
+.signup {
+  position: absolute;
+  top: -20%;
+  box-shadow: -1px 1px 5px 1px rgb(0, 0, 0, 0.35);
+  background: white;
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 20%;
+  padding: 5%;
+  text-align: center;
+  z-index: 99;
+  border-radius: 8px;
+}
+.signup h2 {
+  font-family: 'Poppins', sans-serif;
+  color: black;
+  padding-bottom: 20px;
+  font-size: 30px;
+}
+.signup button {
+  width: 60%;
+  height: 60px;
+  border-radius: 25px;
+  border: none;
+  background-color: hsl(322, 100%, 66%);
+  box-shadow: -1px 1px 5px 1px rgb(0, 0, 0, 0.35);
+  font-size: 20px;
+  color: white;
+}
+.signup button:hover {
+  background-color: hsl(322, 100%, 86%);
+}
+.signupform input {
+  float: left;
+  height: 40px;
+  width: 55%;
+  border-radius: 16px;
+  border: none;
+}
+.footer-logo img {
+  height: 30px;
+}
+.footer-details {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 30px;
+}
+.detail-1,
+.detail-2,
+.detail-3,
+.detail-4 {
+  width: 25%;
+  color: white;
+}
+.detail-2,
+.detail-3,
+.detail-4 {
+  padding-left: 5%;
+}
+.detail-2 a,
+.detail-3 a {
+  display: flex;
+  flex-direction: column;
+  color: rgb(255, 253, 253, 0.9);
+  padding-bottom: 20px;
+}
+.detail-2 a:hover,
+.detail-3 a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.detail-1 {
+  display: flex;
+  flex-direction: column;
+  color: rgb(255, 253, 253, 0.9);
+}
+.detail-1 div{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+.detail-1 div img{
+  height: 20px;
+  margin-right: 20px;
+}
+.detail-4 svg {
+  height: 30px;
+  width: 30px;
+  border: solid white 2px;
+  padding: 5px;
+  margin-left: 5%;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.detail-4 svg path {
+  fill: white;
+}
+
+.detail-4 svg path:hover{
+  fill: hsl(322, 100%, 66%);
+}
+.detail-4 svg:hover {
+  border: solid hsl(322, 100%, 66%) 2px;
+}
+
+
+@media screen and (max-width: 750px){
+    .header{
+        background-image: url("./Images/bg-hero-mobile.svg");
+        padding: 30px;
+        
+    }
+    .header-div{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 50px;
+    }
+    .header-div .header-des{
+        padding: 80px 0;
+        width: 100%;
+        text-align: center;
+    }
+    .header-div .header-img{
+        width: 100%;
+        background-image: url("./Images/illustration-mockups.svg");
+        background-size: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding-top: 80%;
+    }
+    .main-body{
+      display: flex;
+      flex-direction: column;
+      margin: 60px 20px;
+    }
+    .body-des{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        padding: 40px 30px 40px 30px;
+
+    }
+    .body-des:nth-child(2){
+        flex-direction: column;
+    }
+    .body-des div:nth-child(2){
+        margin-left: 0;
+    }
+    .body-des .des-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin-top: 80px;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    .body-des .des-img{
+        width: 100%;
+    }
+    .body-des .des-img img{
+        height: 100%;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .signup {
+      position: absolute;
+      top: -10%;
+      width: 85%;
+      margin-left: 5%;
+      margin-right: 5%;
+    }
+    .signup h2 {
+      font-size: 23px;
+    }
+    .signup button{
+      width: 70%;
+      font-size: 70%;
+      height: 50px;
+      margin-top: 5%;
+    }
+    .footer-details {
+      flex-direction: column;
+    }
+    .detail-1,
+    .detail-2,
+    .detail-3,
+    .detail-4 {
+      width: 100%;
+      padding-bottom: 5%;
+    }
+    .detail-2,
+    .detail-3,
+    .detail-4{
+      padding-left: 0;
+    }
+    .detail-4 {
+      display: flex;
+      justify-content: center;
+      margin-top: 10%;
+    }
+    footer {
+      margin-top: 50%;
+      padding-top: 40%;
+    }
+}
