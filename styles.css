@@ -21,6 +21,8 @@ body{
 }
 .navbar .logo img{
     height: 20px;
+    animation: scaling 1s infinite alternate;
+
 }
 .navbar .header-btn button{
     padding: 10px 30px;
@@ -154,6 +156,7 @@ footer {
 }
 .footer-logo img {
   height: 30px;
+  animation: scaling 1s infinite alternate;
 }
 .footer-details {
   display: flex;
@@ -219,6 +222,15 @@ footer {
   border: solid hsl(322, 100%, 66%) 2px;
 }
 
+@keyframes scaling {
+  From {
+      -webkit-transform: scale(1.0);
+  }
+  To {
+      -webkit-transform: scale(1.5);
+  }
+}
+  
 
 @media screen and (max-width: 750px){
     .header{
